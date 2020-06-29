@@ -28,12 +28,24 @@ const routes: Routes = [
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
   {
-    path: 'contato',
-    loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
-  },
-  {
     path: 'edit-perfil',
     loadChildren: () => import('./edit-perfil/edit-perfil.module').then( m => m.EditPerfilPageModule)
+  },
+  {
+    path: 'adm-agendamentos',
+    loadChildren: () => import('./adm-agendamentos/adm-agendamentos.module').then( m => m.AdmAgendamentosPageModule)
+  },
+  {
+    path: 'adm-confirm-agendam',
+    loadChildren: () => import('./adm-confirm-agendam/adm-confirm-agendam.module').then( m => m.AdmConfirmAgendamPageModule)
+  },
+  {
+    path: 'recup-senha',
+    loadChildren: () => import('./recup-senha/recup-senha.module').then( m => m.RecupSenhaPageModule)
+  },
+  {
+    path: 'contato',
+    loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
   }
 ];
 

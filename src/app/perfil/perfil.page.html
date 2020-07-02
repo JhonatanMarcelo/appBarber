@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-item >
-    <ion-thumbnail slot="start">
+    <ion-thumbnail class="perfil" slot="start">
       <img src="/assets/icon/perfil.jpeg">
     </ion-thumbnail>
     <ion-label class="text"> 
@@ -27,6 +27,7 @@
       <ion-card-title style="display:flex;justify-content:center;align-items:center;">
         Agendamento
       </ion-card-title>
+      <br />
       <br />
 
       <ion-card-subtitle class="text">
@@ -54,7 +55,7 @@
     </ion-segment-button>
 
     <ion-segment-button value="novo" layout="icon-end" routerLink="/agendamento" mode="ios">
-      <ion-icon name="add-circle"></ion-icon>
+      <ion-icon class="icon" name="add-circle"></ion-icon>
       <ion-label>NOVO</ion-label>
     </ion-segment-button>
   </ion-segment>
